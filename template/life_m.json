@@ -1,0 +1,47 @@
+{
+  "type": "box",
+  "layout": "horizontal",
+  "contents": [
+    {
+      "type": "text",
+      "text": "2024/08/01",
+      "size": "sm",
+      "color": "#6C6C6C",
+      "flex": 0,
+      "align": "start",
+      "position": "absolute"
+    },
+    {
+      "type": "text",
+      "text": "1",
+      "size": "xs",
+      "color": "#6C6C6C",
+      "align": "center",
+      "margin": "80px"
+    },
+    {
+      "type": "text",
+      "text": "0",
+      "size": "xs",
+      "color": "#6C6C6C",
+      "align": "center",
+      "margin": "xs"
+    },
+    {
+      "type": "text",
+      "text": "1",
+      "size": "xs",
+      "color": "#6C6C6C",
+      "align": "center",
+      "margin": "xs"
+    },
+    {
+      "type": "text",
+      "text": "0",
+      "size": "xs",
+      "color": "#6C6C6C",
+      "align": "center",
+      "margin": "xs"
+    }
+  ]
+}

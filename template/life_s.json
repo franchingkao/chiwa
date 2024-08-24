@@ -1,0 +1,79 @@
+{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "小吉日記",
+        "weight": "bold",
+        "color": "#BB5E00",
+        "size": "lg"
+      },
+      {
+        "type": "separator",
+        "margin": "xxl"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "xxl",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "日期",
+                "size": "sm",
+                "color": "#6C6C6C",
+                "flex": 0,
+                "align": "start",
+                "position": "absolute"
+              },
+              {
+                "type": "text",
+                "text": "喝水",
+                "size": "xs",
+                "color": "#6C6C6C",
+                "align": "center",
+                "margin": "80px"
+              },
+              {
+                "type": "text",
+                "text": "尿尿",
+                "size": "xs",
+                "color": "#6C6C6C",
+                "align": "center",
+                "margin": "xs"
+              },
+              {
+                "type": "text",
+                "text": "大便",
+                "size": "xs",
+                "color": "#6C6C6C",
+                "align": "center",
+                "margin": "xs"
+              },
+              {
+                "type": "text",
+                "text": "跑跑",
+                "size": "xs",
+                "color": "#6C6C6C",
+                "align": "center",
+                "margin": "xs"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "separator",
+        "margin": "xxl"
+      }
+    ]
+  }
+}

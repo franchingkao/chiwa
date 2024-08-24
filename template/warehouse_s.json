@@ -1,0 +1,68 @@
+{
+    "type": "bubble",
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "小吉的櫃子",
+          "weight": "bold",
+          "color": "#BB5E00",
+          "size": "lg"
+        },
+        {
+          "type": "text",
+          "text": "要注意有效期限內喲～",
+          "size": "xs",
+          "margin": "none"
+        },
+        {
+          "type": "separator",
+          "margin": "xxl"
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "margin": "xxl",
+          "spacing": "sm",
+          "contents": [
+            { "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "有效期限",
+                  "size": "sm",
+                  "color": "#6C6C6C",
+                  "flex": 0,
+                  "align": "start"
+                },
+                {
+                  "type": "text",
+                  "text": "品項",
+                  "size": "xs",
+                  "color": "#6C6C6C",
+                  "align": "start",
+                  "margin": "xxl",
+                  "offsetStart": "xxl"
+                },
+                {
+                  "type": "text",
+                  "text": "數量",
+                  "size": "xs",
+                  "color": "#6C6C6C",
+                  "align": "end",
+                  "margin": "xs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "separator",
+          "margin": "xxl"
+        }
+      ]
+    }
+  }

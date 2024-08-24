@@ -1,0 +1,31 @@
+{
+  "type": "box",
+  "layout": "horizontal",
+  "contents": [
+    {
+      "type": "text",
+      "text": "datetime",
+      "size": "sm",
+      "color": "#111111",
+      "flex": 0,
+      "align": "start"
+    },
+    {
+      "type": "text",
+      "text": "item",
+      "size": "xs",
+      "color": "#111111",
+      "align": "start",
+      "margin": "sm",
+      "offsetStart": "xxl"
+    },
+    {
+      "type": "text",
+      "text": "value",
+      "size": "xs",
+      "color": "#111111",
+      "align": "end",
+      "margin": "xs"
+    }
+  ]
+}

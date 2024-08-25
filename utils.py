@@ -3,7 +3,6 @@ import datetime
 from dateutil import parser
 import copy, json
 from collections import defaultdict
-import os
 
 def firstMeet():
     buttons_template = ButtonsTemplate(
@@ -22,9 +21,9 @@ def instruction():
         thumbnail_image_url='https://firebasestorage.googleapis.com/v0/b/strange-reducer-431108-b9.appspot.com/o/dog.jpg?alt=media&token=04ecca87-b341-4352-a092-53fd2b967361',
         text='汪汪汪汪汪汪汪汪!!!',
         actions=[
-            MessageAction(label='照顧小吉 記錄生活', text='呼叫小吉'),
-            MessageAction(label='叫小吉幫忙整理櫃子', text='小吉幫忙'),
-            MessageAction(label='再次放生小吉', text='放生小吉'),
+            MessageAction(label='照顧小吉的同時記錄他的生活', text='呼叫小吉'),
+            MessageAction(label='叫小吉幫忙整理零食櫃和櫥櫃', text='小吉幫忙'),
+            MessageAction(label='再次放生小吉(放生前請三思)', text='放生小吉'),
             URIAction(label='一探究竟小吉的一生', uri='https://franchingkao.github.io/2024/08/21/chatbot-chiwa/'),
             # PostbackAction(label='點擊按鈕', data='button_clicked')
         ]
@@ -159,12 +158,12 @@ def addItem(msg):
         item, value, exp = info
         exp = parser.parse(exp, fuzzy=True).date()
     
-    return item, int(value), exp
+    return item, int(value), str(exp)
 
 def sortStorage(records):         
-    with open(os.path.join('template', 'warehouse_s.json'), 'r') as file:
+    with open('template_s_box.json', 'r') as file:
         flex = json.load(file)
-    with open(os.path.join('template', 'warehouse_m.json'), 'r') as file:
+    with open('template_m_box.json', 'r') as file:
         tmp = json.load(file)
 
     result = defaultdict(int)
@@ -184,9 +183,9 @@ def sortStorage(records):
     return flex
 
 def sortChiwa(records):
-    with open(os.path.join('template', 'life_s.json'), 'r') as file:
+    with open('template_s_life.json', 'r') as file:
         flex = json.load(file)
-    with open(os.path.join('template', 'life_m.json'), 'r') as file:
+    with open('template_m_life.json', 'r') as file:
         tmp = json.load(file)
         
     result = defaultdict(lambda: defaultdict(int))

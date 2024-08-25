@@ -83,6 +83,8 @@ def linebot(request):
                     reply_msg = helpChiwa()
                 
                 elif '小吉看看' in msg:
+                    # today = pd.to_datetime('today').normalize()
+
                     records = fdb.get(warehouse_path, None) if '櫥櫃' in msg else fdb.get(snack_path, None)
                     
                     if records is None:
@@ -97,6 +99,8 @@ def linebot(request):
                     reply_msg = TextSendMessage(text=f'汪汪!')
                 
                 elif '最近怎麼樣' in msg or '摸摸' in msg:
+                    # today = pd.to_datetime('today').normalize()
+
                     records = fdb.get(life_path, None)
 
                     if records is None:
